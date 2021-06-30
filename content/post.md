@@ -51,3 +51,13 @@ For now, we will use a simple bus of 4 wires, each of which will carry a signal.
 The truth table shows that segment __a__ must always be on, except for digits _1_ and _4_. To simplify, we can make it so that the logical 1 is only in these 2 states and add a logical _NOT_ to the output. Then we will always have a 1, except for the 2 states. Here is the schematic:
 
 ![Circuit](https://github.com/MrZloHex/Decoder/blob/master/images/circuit-segment-a.png)
+
+I have added an additional inverted bus for convenience and clarity.
+
+The output should be a logic _0_ with inputs _0 0 0 1_ and _0 1 0 0_ (on lines 3, 2, 1, 0 respectively). So I took not inverted first line but all other inverted lines, and it turned out, that _0 0 0 1_ transforms to _1' 1` 1' 1_ ( ' is inverted signal), then all these signals are grouped in one common, which goes into the _NOT-OR_ gate, which at the end inverts logical _1_ into _0_, so that at these input parameters segment __a__ is not on. The same is done for the other case: _0 1 0 0_ is converted to _1' 1 1 1'_ and also goes to the same _NOT-OR_ valve as the first case.
+
+The rest of the modules for the other indicator segments are made in a similar way. You should end up with something similar:
+
+![Full scheme](https://github.com/MrZloHex/Decoder/master/images/full-scheme.jpg)
+
+
