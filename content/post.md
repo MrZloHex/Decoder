@@ -6,4 +6,4 @@ The 7-segment display is one of the most popular and simplest displays of Arabic
 
 [Frank Wood]: https://patents.google.com/patent/US974943
 
-![7-segment]()
+![7-segment](https://github.com/MrZloHex/Decoder/blob/master/images/7-segment-photo.jpg)
