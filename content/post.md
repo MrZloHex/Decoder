@@ -42,7 +42,7 @@ Let's assume we have a 4-bit bus with our device transmitting a signal in binary
 
 Using binary notation assumes the use of Boolean logic. So it makes sense to use it. Therefore we start by making a truth table for the decoder.
 
-<img align="left" width="578" height="325" src="">
+<img align="left" width="578" height="325" src="https://github.com/MrZloHex/Decoder/blob/master/images/truth-table.png">
 
 For now, we will use a simple bus of 4 wires, each of which will carry a signal. In our case, 5V is a logical one and GND is a logical zero. The first column in the table is just for clarity, which digit we want to display. Based on this table we need to create a device that at input values in the bus, would output 7 values for the indicator. For this, we will use operations on Boolean values: conjunction (and, &), disjunction (or, |), negation (not, ¬). So, let's start creating a chain of logic gates.
 
@@ -50,4 +50,4 @@ For now, we will use a simple bus of 4 wires, each of which will carry a signal.
 
 The truth table shows that segment __a__ must always be on, except for digits _1_ and _4_. To simplify, we can make it so that the logical 1 is only in these 2 states and add a logical _NOT_ to the output. Then we will always have a 1, except for the 2 states. Here is the schematic:
 
-![Circuit]()
+![Circuit](https://github.com/MrZloHex/Decoder/blob/master/images/circuit-segment-a.png)
