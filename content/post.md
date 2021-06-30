@@ -60,4 +60,12 @@ The rest of the modules for the other indicator segments are made in a similar w
 
 ![Full scheme](https://github.com/MrZloHex/Decoder/blob/master/images/full-scheme.jpg)
 
+## Improvement
 
+This circuit is fully functional, but it has many repetitive elements and would take up too much space, even if done as a separate integrated circuit. It is therefore worth refining it.
+
+<img align="left" width="578" height="325" src="https://github.com/MrZloHex/Decoder/blob/master/images/improved-truth-table.png">
+
+First, let's have a look at the truth table. It can be seen that for segment e there are more logical _0_, so for it, it is possible not to invert the output (!! - double negation, i.e. we do not change anything). Also using the same module for digit _1_ happens 4 times! And for digit 9 you can do no module at all (the number of repetitions of the same module for the digit is put in the last column). This is a significant waste of space and logic gates. After re-engineering, the output will be about this scheme:
+
+![Improved-scheme](https://github.com/MrZloHex/Decoder/blob/master/images/improved-scheme.jpg)
