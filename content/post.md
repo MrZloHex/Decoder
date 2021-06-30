@@ -69,3 +69,17 @@ This circuit is fully functional, but it has many repetitive elements and would 
 First, let's have a look at the truth table. It can be seen that for segment e there are more logical _0_, so for it, it is possible not to invert the output (!! - double negation, i.e. we do not change anything). Also using the same module for digit _1_ happens 4 times! And for digit 9 you can do no module at all (the number of repetitions of the same module for the digit is put in the last column). This is a significant waste of space and logic gates. After re-engineering, the output will be about this scheme:
 
 ![Improved-scheme](https://github.com/MrZloHex/Decoder/blob/master/images/improved-circuit.jpg)
+
+## Implementing
+
+There are three ways to implement this decoder.
+
+ * From off-the-shelf logic gate chips, e.g. the 74HCxx series of chips. This method is the simplest, not the most practical, but quite acceptable. It will also be easy to retrofit for n-rate indicators. And great for tests.
+
+ *  A more complicated but more "cool" way, building all the logic gates on TTL, BC546 transistors and its complementary pair BC556 are excellent. This way will require additional circuit building on the transistors, for them to work correctly. It will take more space, but you can make a transparent case and put it on a shelf. After all, the use of TTLs these days, is not at all uncommon.
+
+ * The industrial way is to make complete silicon integrated circuits. It is not the fastest way, but it allows for mass production. But it is worth to note, that such microcircuits have been produced for a long time and it will not be too expedient.
+
+## Epilogue
+
+In conclusion, I should note that this decoder is a good practical work for practicing logic circuit construction and for understanding the construction of simple electronic devices. The inspiration for the creation of this study was provided by Ben Eater.
