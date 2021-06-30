@@ -68,4 +68,4 @@ This circuit is fully functional, but it has many repetitive elements and would 
 
 First, let's have a look at the truth table. It can be seen that for segment e there are more logical _0_, so for it, it is possible not to invert the output (!! - double negation, i.e. we do not change anything). Also using the same module for digit _1_ happens 4 times! And for digit 9 you can do no module at all (the number of repetitions of the same module for the digit is put in the last column). This is a significant waste of space and logic gates. After re-engineering, the output will be about this scheme:
 
-![Improved-scheme](https://github.com/MrZloHex/Decoder/blob/master/images/improved-scheme.jpg)
+![Improved-scheme](https://github.com/MrZloHex/Decoder/blob/master/images/improved-circuit.jpg)
