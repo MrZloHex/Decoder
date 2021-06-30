@@ -58,6 +58,6 @@ The output should be a logic _0_ with inputs _0 0 0 1_ and _0 1 0 0_ (on lines 3
 
 The rest of the modules for the other indicator segments are made in a similar way. You should end up with something similar:
 
-![Full scheme](https://github.com/MrZloHex/Decoder/master/images/full-scheme.jpg)
+![Full scheme](https://github.com/MrZloHex/Decoder/blob/master/images/full-scheme.jpg)
 
 
