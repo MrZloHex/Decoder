@@ -18,6 +18,7 @@ Let's take a common cathode display as an example. Let's try to output some digi
 
 </br>
 
+Made in Tinkercad
 
 </br>
 
@@ -26,3 +27,13 @@ Let's take a common cathode display as an example. Let's try to output some digi
 ## Problems that occur
 
 We have figured out how we can display different characters on the indicator, but let's imagine that we have some electronic device which should count numbers and for convenience we want to use an indicator, but here is the trouble, we have only 4 free I/0 lines left, or we deliberately want to optimize this so as not to write code on the microcontroller to represent the numbers on the screen or in a more convenient way for us. Recall, a simple connection requires 8 of these lines.
+
+## Encoding
+
+As our most familiar number system is decimal, we will use it and the digits from 0 to 9. If desired, it is also possible to continue with the 16-digit system. Since we are still building with 5V logic, it would be strange not to use binary notation. We have 10 digits, hence we need at least 4 bits to represent all possible variations. I suggest making a table for convenience.
+
+| Decimal |   0  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |
+|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| Binary  | 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 | 1000 | 1001 |
+
+Let's assume we have a 4-bit bus with our device transmitting a signal in binary representation. Now we need to decode it and transmit it to the display.
