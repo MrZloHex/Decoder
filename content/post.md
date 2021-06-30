@@ -12,9 +12,11 @@ Since LEDs are most commonly used in such displays, and as we know they have a c
 
 The indicator is a set of LEDs with either anode or cathode merged together, depending on the type. As we can see, it is possible to control each segment individually.
 
-<img align="left" width="200" height="180" src="https://github.com/MrZloHex/Decoder/blob/master/images/display-pinout.jpg">
+<img align="left" width="350" height="325" src="https://github.com/MrZloHex/Decoder/blob/master/images/display-pinout.jpg">
 
 Let's take a common cathode display as an example. Let's try to output some digits to the display. First we take __0__; in order to output we need to connect pins _7, 6, 4, 2, 1, 9_ (_a, b, c, d, e, f_ - respectively) to "__+__" power, and don't forget about resistors, so that LEDs don't burn out; if you use _5V_ power, then it will be enough to connect 330Ohm resistor from pin _3, 8_ to _GND_. And then you can see __0__ on the display. You can also output __1__; connect pins _6, 4_ (_b, c_) to the positive terminal of the power supply and you can see the 1 on the display. The other digits are output in the same way. 
+
+</br>
 
 ![Zero-One](https://github.com/MrZloHex/Decoder/blob/master/images/zerp-and-one.png)
 
